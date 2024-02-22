@@ -1,7 +1,36 @@
+:root {
+  --border-radius: 8px;
+  --distance: 12px;
+}
+
 .LifeTrackerPage {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  overflow: hidden;
   min-height: 100%;
   min-width: 100%;
+  gap: var(--distance);
+  background-color: black;
+  padding: var(--distance);
+  box-sizing: border-box;
+}
+
+.player1 {
+  border-radius: var(--border-radius);
+  background-color: red;
+}
+.player2 {
+  border-radius: var(--border-radius);
+  transform: rotate(180deg);
+  background-color: blue;
+}
+.player3 {
+  border-radius: var(--border-radius);
+  background-color: pink;
+}
+.player4 {
+  transform: rotate(180deg);
+  border-radius: var(--border-radius);
+  background-color: green;
 }
